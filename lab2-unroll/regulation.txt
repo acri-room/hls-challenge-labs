@@ -1,0 +1,8 @@
+target_clock_period_ns=2
+vitis_version=2022.1
+csim_timeout=5m
+hls_timeout=15m
+cosim_timeout=15m
+syn_timeout=30m
+cxxflags=""
+ldflags=""
