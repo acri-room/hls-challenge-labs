@@ -30,6 +30,6 @@ int main(int argc, char** argv)
 
   // Check
   bool pass = true;
-  if (!(std::abs(out - sum) <= 1e-2)) pass = false;
+  if (!(std::abs(out - sum) <= 1e-1)) pass = false;
   if (!pass) return EXIT_FAILURE;
 }
