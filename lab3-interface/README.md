@@ -18,9 +18,9 @@ void kernel(const float in[1024], float out[1024], int size) {
 
 ### 演習3-1
 
-`INTERFACE` プラグマを使用すると、カーネル引数をどのようなインターフェースとして実現するかを指定することができます。これまでのように特に何も指定しない場合は AXI-MM が選択されます。
+`INTERFACE` プラグマを使用すると、カーネル引数をどのようなインターフェースとして実現するかを指定することができます。配列引数に対して特に何も指定しない場合は AXI-MM が選択されます。
 
-次のように `INTERFACE` プラグマを適用することでインターフェースを AXI-Stream（AXI-S）に変更し、効果を確認してください。
+次のように `INTERFACE` プラグマを適用することでインターフェースを AXI-Stream（AXI-S）に指定できます。コードを変更し効果を確認してください。
 
 ```cpp
 #include "kernel.hpp"
@@ -61,7 +61,7 @@ void kernel(const float in[1024], float out[1024], int size) {
 
 ### 演習3-2
 
-インターフェースを AXI-S に変更した配列引数のアクセスは自動では並列化されません。このため次のようにループ内の回路だけを並列化してもサイクル数は短縮しません。
+インターフェースを AXI-S に変更した配列引数へのアクセスは自動で並列化されません。このため次のようにループ内の回路だけを並列化してもサイクル数は短縮しません。
 
 ```cpp
 #include "kernel.hpp"
@@ -76,7 +76,7 @@ void kernel(const float in[1024], float out[1024], int size) {
 }
 ```
 
-AXI-S インターフェースの配列引数は `ARRAY_PARTITION` プラグマで明示的に並列化する必要があります。次のように `ARRAY_PARTITION` プラグマを適用し、効果を確認してください。
+AXI-S インターフェースの配列引数は `ARRAY_PARTITION` プラグマで明示的に並列化する必要があります。次のように `in`、`out` に対して `ARRAY_PARTITION` プラグマを適用し、効果を確認してください。
 
 ```cpp
 #include "kernel.hpp"
@@ -131,4 +131,4 @@ void kernel(const float in[1024], float out[1024], int size) {
 並列数を大きくして上位入賞に挑戦してみましょう。
 
 <hr>
-<p align="center"><a href="../lab4-accum/">次の演習へ進む</a></p>
+<p align="center"><a href="..">トップへ戻る</a> － <a href="../lab4-accum/">次の演習へ進む</a></p>

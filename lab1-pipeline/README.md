@@ -125,4 +125,4 @@ myloop:
 
 
 <hr>
-<p align="center"><a href="../lab2-unroll/">次の演習へ進む</a></p>
+<p align="center"><a href="..">トップへ戻る</a> － <a href="../lab2-unroll/">次の演習へ進む</a></p>

@@ -2,7 +2,7 @@
 
 ## アルゴリズム
 
-この演習では [vector-mean-var2](https://acri-vhls-challenge.web.app/challenge/vector-mean-var2) を題材として用い、適切なアルゴリズムを選択することで計算を効率的に行うことができることを学びます。
+この演習では [vector-mean-var2](https://acri-vhls-challenge.web.app/challenge/vector-mean-var2) を題材として用い、問題に対して適切なアルゴリズムを選択することで計算を効率的にできることを学びます。
 
 `vector-mean-var2` の問題文は次です（数式は省略しています）。
 
@@ -86,3 +86,6 @@ void kernel(
 ### 演習 6-3（任意）
 
 これまでに学んだテクニックを適用してさらなる高速化を行い、上位入賞を目指しましょう。
+
+<hr>
+<p align="center"><a href="..">トップへ戻る</a></p>

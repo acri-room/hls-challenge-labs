@@ -2,13 +2,13 @@
 
 ## キャッシュ
 
-この演習では [simple-sort2](https://acri-vhls-challenge.web.app/challenge/simple-sort2) を題材として用い、引数配列へのアクセスがボトルネックとなっているカーネルをキャッシュを使って高速化する方法を学びます。
+この演習では [simple-sort2](https://acri-vhls-challenge.web.app/challenge/simple-sort2) を題材として用い、配列引数へのアクセスがボトルネックとなっているカーネルを、キャッシュを使って高速化する方法を学びます。
 
 `simple-sort2` の問題文は次です。
 
 ```markdown
 # 問題
-配列 `in` で与えられた 128 個のデータを昇順で並び替えて `out` に格納してください。
+配列 in で与えられた 128 個のデータを昇順で並び替えて out に格納してください。
 ```
 
 リファレンスコードは次です。`SIZE` はヘッダーファイルで 128 と定義されています。
@@ -35,7 +35,7 @@ void kernel(const int in[SIZE], int out[SIZE]) {
 }
 ```
 
-このコードではデータの並び替えにバブルソートを使用しています。二重ループの中で `out` 引数配列に頻繁にアクセスしています。カーネルから引数配列へのアクセスは時間がかかるため非効率です。
+このコードではデータの並び替えにバブルソートを使用しています。二重ループの中で `out` 配列引数に頻繁にアクセスしています。カーネルから配列引数へのアクセスは時間がかかるため非効率です。
 
 ### 演習 5-1
 
@@ -130,4 +130,4 @@ void kernel(const int in[SIZE], int out[SIZE]) {
 </details>
 
 <hr>
-<p align="center"><a href="../lab6-algo/">次の演習へ進む</a></p>
+<p align="center"><a href="..">トップへ戻る</a> － <a href="../lab6-algo/">次の演習へ進む</a></p>

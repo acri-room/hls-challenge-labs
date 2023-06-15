@@ -96,4 +96,4 @@ void kernel(const float in[1024], float out[1024], int size) {
 上記の例では `factor=4` として回路を 4 並列にしました。並列数をさらに大きくするとどうなるでしょうか。
 
 <hr>
-<p align="center"><a href="../lab3-interface/">次の演習へ進む</a></p>
+<p align="center"><a href="..">トップへ戻る</a> － <a href="../lab3-interface/">次の演習へ進む</a></p>

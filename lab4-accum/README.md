@@ -35,7 +35,7 @@ void kernel(const float in[1024], const int size, float *out) {
 <details>
   <summary>確認が終わったらここをクリックして答え合わせ</summary>
   
-  リファレンスコードを採点すると次のような結果になります。
+  リファレンスコードを採点すると次の結果になります。
 
   ```
   Bytes of kernel code: 267
@@ -65,7 +65,7 @@ void kernel(const float in[1024], const int size, float *out) {
 
 ### 演習 4-2
 
-試しに累積演算を 4 並列にしてみましょう。ループに `UNROLL` プラグマを適用するだけではうまくいきません。並列数に合わせて累積対象の変数も増やしてください。
+試しに累積演算を 4 並列にしてサイクル数がどうなるか確認してみましょう。ループに `UNROLL` プラグマを適用するだけではうまくいきません。並列数に合わせて累積対象の変数も増やす必要があることにご注意ください。
 
 <details>
   <summary>コード例はこちら</summary>
@@ -116,4 +116,4 @@ void kernel(const float in[1024], const int size, float *out) {
 レイテンシの観点で並列数はいくつが最適でしょうか。考えてみてください。コードを変更し確かめてみましょう。
 
 <hr>
-<p align="center"><a href="../lab5-cache/">次の演習へ進む</a></p>
+<p align="center"><a href="..">トップへ戻る</a> － <a href="../lab5-cache/">次の演習へ進む</a></p>
