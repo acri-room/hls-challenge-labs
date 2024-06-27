@@ -2,9 +2,9 @@
 
 ## 累積演算の高速化
 
-この演習では [simple-accum2](https://acri-vhls-challenge.web.app/challenge/simple-accum2) を題材として用い、累積演算がボトルネックとなっているループを高速化する方法を学びます。
+この演習では [simple-accum](https://acri-vhls-challenge.web.app/challenge/simple-accum3) を題材として用い、累積演算がボトルネックとなっているループを高速化する方法を学びます。
 
-`simple-accum2` の問題文は次です。
+`simple-accum` の問題文は次です。
 
 ```markdown
 # 問題
@@ -60,7 +60,7 @@ void kernel(const float in[1024], const int size, float *out) {
   Pipelining result : Target II = NA, Final II = 13, Depth = 16, loop 'VITIS_LOOP_5_1'
   ```
 
-  `simple-accum2` で設定されているクロック周期は 2ns で、これから計算するとクロック周波数は 500MHz です。上記は 500MHz で float の加算を行うには 13 サイクルほどかかることを意味します。この float 加算器のレイテンシを短縮することはできませんので、加算器の数を増やして性能を向上することを考えます。
+  `simple-accum` で設定されているクロック周期は 2ns で、これから計算するとクロック周波数は 500MHz です。上記は 500MHz で float の加算を行うには 13 サイクルほどかかることを意味します。この float 加算器のレイテンシを短縮することはできませんので、加算器の数を増やして性能を向上することを考えます。
 </details>
 
 ### 演習 4-2

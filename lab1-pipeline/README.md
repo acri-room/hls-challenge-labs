@@ -2,7 +2,7 @@
 
 ## パイプラインによる処理のタスク並列化
 
-この演習では [bai-gaeshi2](https://acri-vhls-challenge.web.app/challenge/bai-gaeshi2) を例に、ループのパイプライン化による高速化の効果を見てみます。bai-gaeshi2 は次の内容のチャレンジです。
+この演習では [bai-gaeshi](https://acri-vhls-challenge.web.app/challenge/bai-gaeshi3) を例に、ループのパイプライン化による高速化の効果を見てみます。bai-gaeshi は次の内容のチャレンジです。
 
 ```markdown
 # 問題

@@ -2,9 +2,9 @@
 
 ## アルゴリズム
 
-この演習では [vector-mean-var2](https://acri-vhls-challenge.web.app/challenge/vector-mean-var2) を題材として用い、問題に対して適切なアルゴリズムを選択することで計算を効率的にできることを学びます。
+この演習では [vector-mean-var](https://acri-vhls-challenge.web.app/challenge/vector-mean-var3) を題材として用い、問題に対して適切なアルゴリズムを選択することで計算を効率的にできることを学びます。
 
-`vector-mean-var2` の問題文は次です（数式は省略しています）。
+`vector-mean-var` の問題文は次です（数式は省略しています）。
 
 ```markdown
 # 問題

@@ -2,7 +2,7 @@
 
 ## インターフェースの軽量化
 
-この演習では演習 2 に引き続き [bai-gaeshi2](https://acri-vhls-challenge.web.app/challenge/bai-gaeshi2) を題材として用います。
+この演習では演習 2 に引き続き [bai-gaeshi](https://acri-vhls-challenge.web.app/challenge/bai-gaeshi3) を題材として用います。
 
 次のコードを起点に `INTERFACE` プラグマと `ARRAY_PARTITION` プラグマを使ってインターフェースを軽量化する方法を学びます。
 
@@ -124,7 +124,7 @@ void kernel(const float in[1024], float out[1024], int size) {
 
 ここまでの成果を HLS チャレンジに投稿してみましょう。
 
-- https://acri-vhls-challenge.web.app/challenge/bai-gaeshi2
+- https://acri-vhls-challenge.web.app/challenge/bai-gaeshi3
 
 ### 演習 3-4（任意）
 

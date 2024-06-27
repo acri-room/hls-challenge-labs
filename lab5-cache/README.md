@@ -2,9 +2,9 @@
 
 ## キャッシュ
 
-この演習では [simple-sort2](https://acri-vhls-challenge.web.app/challenge/simple-sort2) を題材として用い、配列引数へのアクセスがボトルネックとなっているカーネルを、キャッシュを使って高速化する方法を学びます。
+この演習では [simple-sort](https://acri-vhls-challenge.web.app/challenge/simple-sort3) を題材として用い、配列引数へのアクセスがボトルネックとなっているカーネルを、キャッシュを使って高速化する方法を学びます。
 
-`simple-sort2` の問題文は次です。
+`simple-sort` の問題文は次です。
 
 ```markdown
 # 問題

@@ -2,7 +2,7 @@
 
 ## 回路の並列化
 
-この演習では演習 1 に引き続き [bai-gaeshi2](https://acri-vhls-challenge.web.app/challenge/bai-gaeshi2) を例に、`UNROLL` プラグマを使って回路を並列化する方法を学びます。
+この演習では演習 1 に引き続き [bai-gaeshi](https://acri-vhls-challenge.web.app/challenge/bai-gaeshi3) を例に、`UNROLL` プラグマを使って回路を並列化する方法を学びます。
 
 `kernel.cpp` はループをパイプライン化した後の次の内容であるとします。
 
@@ -66,7 +66,7 @@ void kernel(const float in[1024], float out[1024], int size) {
 #pragma HLS UNROLL factor=4 skip_exit_check
 ```
 
-> :warning: この問題（[bai-gaeshi2](https://acri-vhls-challenge.web.app/challenge/bai-gaeshi2)）で `UNROLL` プラグマに `skip_exit_check` オプションを付けて高速化できるのは、テストベンチ（`tb.cpp`）内で、`out` 配列の `size` 以降の要素をチェックしていないためです。もし問題の要件に `size` 以降の要素を変更してはならないとありテストベンチ側でチェックが行われていれば答え合わせで `Fail` します。
+> :warning: この問題（[bai-gaeshi](https://acri-vhls-challenge.web.app/challenge/bai-gaeshi3)）で `UNROLL` プラグマに `skip_exit_check` オプションを付けて高速化できるのは、テストベンチ（`tb.cpp`）内で、`out` 配列の `size` 以降の要素をチェックしていないためです。もし問題の要件に `size` 以降の要素を変更してはならないとありテストベンチ側でチェックが行われていれば答え合わせで `Fail` します。
 
 <details>
   <summary>確認が終わったらここをクリックして答え合わせ</summary>
